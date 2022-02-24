@@ -459,6 +459,7 @@ img{
 /**********************************/
 /* 7. Newsletter
 /**********************************/
+
 .newsleeter-c{
 	padding: 4rem 0;
 }
@@ -473,11 +474,11 @@ img{
 	line-height: 1.2;
 	margin: .8rem 0;
 }
-.newsleeter-form{
+.tel-contato{
 	display: flex;
 	flex-wrap: wrap;
 }
-.newsleeter-form__input{
+.tel-contato__text{
 	flex: 3 1 37rem;
 	font-size: 1.8rem;
 	height: 6rem;
@@ -486,7 +487,7 @@ img{
 	padding: 1rem;
 	border-radius: 0;
 }
-.newsleeter-form__submit{
+.tel-contato__link{
 	flex: 1;
 	font-size: 3.6rem;
 	font-weight: 600;
@@ -499,7 +500,7 @@ img{
 	padding: 1.6rem;
 	transition: var(--transition);
 }
-.newsleeter-form__submit:hover{
+.tel-contato__link:hover{
 	letter-spacing: .6rem;
 }
 
@@ -510,28 +511,86 @@ img{
 		justify-content: space-between;
 		align-items: center;
 	}
-	.newsleeter-info, .newsleeter-form{
+	.newsleeter-info, .tel-contato{
         flex: 1 1 26rem;
 	}
 }
 @media screen and (min-width:960px){
-	.newsleeter-form__input{
+	.tel-contato__link{
 		flex: 1;
 		height: auto;
 		margin-right: 3rem;
 	}
-	.newsleeter-form__submit{
+	.tel-contato__text{
 		font-size: 2.8rem;
 	}
 }
 @media screen and (min-width:1170px){
-    .newsleeter-form__input{
+    .tel-contato__text{
 		flex: 2;
 	}
 }
 
 /**********************************/
+.galeria{
+	padding: 0;
+}
+.galeria-item{
+position: relative;
+min-width: 17rem;
+cursor: pointer;
+overflow: hidden;
+}
 
+.galeria-item__thumb{
+	transition: var(--transition);
+}
+
+.galeria-item::before{
+	content: "";
+	position: absolute;
+	background: var(--clr-black);
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: var(--transition);
+}
+.galeria-item__local{
+	position: absolute;
+	font-size: 2.4rem;
+	font-weight: 600;
+	left: 6.4rem;
+	bottom: 3.2rem;
+	color: var(--clr-white);
+	opacity: 0;
+	z-index: 2;
+	transition: var(--transition);
+}
+.galeria-item:hover .galeria-item__thumb{
+	transform: scale(1.2);
+}
+.galeria-item:hover .galeria-item__local{
+	left: 3.2rem;
+	opacity: 1;
+}
+.galeria-item:hover.galeria-item::before{
+	opacity: .7;
+}
+@media screen and (min-width:768px){
+	.galeria{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.galeria-item{
+		flex: 0 0 50%;
+	}
+}
+@media screen and (min-width:768px){
+	.galeria-item{
+		flex: 0 0 25%;
+	}
+}
 
 
 /**********************************/
@@ -589,3 +648,104 @@ img{
 }
 
 /**********************************/
+.modal{
+	position: fixed;
+	background: rgba(0, 0, 0, 0.6);
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	color: white;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	padding: 1.6rem;
+	z-index: 4;
+}
+.modal__close{
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 2.4rem;
+	padding: 1.6rem;
+	cursor: pointer;
+}
+.slider{
+	position: relative;
+
+}
+
+.slider-image__number{
+	position: absolute;
+	background: var(--clr-black);
+	font-size: 1.4rem;
+	padding: .2rem;
+	margin-left: .8rem;
+	margin-top: .8rem;
+}
+.slider-buttons{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.slider-buttons__btn-prev, .slider-buttons__btn-next{
+	font-size: 2.4rem;
+	padding: 1.6rem;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	transition: var(--transition);
+
+}
+.slider-buttons__btn-prev:hover, .slider-buttons__btn-next:hover{
+  background: var(--clr-medium-green);
+}
+.slider-image-description{
+	background: var(--clr-black);
+	text-align: center;
+}
+.slider-thumbs{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.slider-thumbs__img{
+	position: relative;
+	flex: 0 0 25%;
+	cursor: pointer;
+}
+.slider-thumbs__img::before{
+	content: "";
+	position: absolute;
+	background: black;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: .7;
+}
+.slider-thumbs__img:hover.slider-thumbs__img::before{
+    opacity: 0;
+}
+.slider-thumbs__img--active.slider-thumbs__img::before{
+	opacity: 0;
+}
+@media screen and (min-width:648px){
+	.modal{
+		padding: 5.6rem;
+	}
+}
+
+@media screen and (min-width:768px){
+   .modal{
+	   padding: 1.6rem;
+   }
+   .slider-thumbs__img{
+	   flex: 1;
+	   max-width: 10rem;
+   }
+}

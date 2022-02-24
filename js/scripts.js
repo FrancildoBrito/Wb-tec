@@ -1,34 +1,34 @@
 const _gallery = [
 	{
-		img: "assets/photo_0.png",
+		img: "assets/front.jpg",
 		description: "Conceição do Mato Dentro"
 	},
 	{
-		img: "assets/photo_1.png",
+		img: "assets/previus.jpg",
 		description: "Diamantina"
 	},
 	{
-		img: "assets/photo_2.png",
+		img: "assets/next.jpg",
 		description: "Tiradentes"
 	},
 	{
-		img: "assets/photo_3.png",
+		img: "assets/wb1.jpg",
 		description: "São Lourenço"
 	},
 	{
-		img: "assets/photo_4.png",
+		img: "assets/wb2.jpg",
 		description: "Serro"
 	},
 	{
-		img: "assets/photo_5.png",
+		img: "assets/wb3.jpg",
 		description: "São Tomé das Letras"
 	},
 	{
-		img: "assets/photo_6.png",
+		img: "assets/wb4.jpg",
 		description: "Ipoema"
 	},
 	{
-		img: "assets/photo_7.png",
+		img: "assets/batery.jpg",
 		description: "Ouro Preto"
 	}
 ]
