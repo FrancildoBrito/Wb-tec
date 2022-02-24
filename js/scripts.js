@@ -1,35 +1,35 @@
 const _gallery = [
 	{
 		img: "assets/front.jpg",
-		description: "Conceição do Mato Dentro"
+		description: "frontal"
 	},
 	{
 		img: "assets/previus.jpg",
-		description: "Diamantina"
+		description: "antes do concerto"
 	},
 	{
 		img: "assets/next.jpg",
-		description: "Tiradentes"
+		description: "depois do concerto"
 	},
 	{
 		img: "assets/wb1.jpg",
-		description: "São Lourenço"
+		description: "troca fios"
 	},
 	{
 		img: "assets/wb2.jpg",
-		description: "Serro"
+		description: "conectores"
 	},
 	{
 		img: "assets/wb3.jpg",
-		description: "São Tomé das Letras"
+		description: "tela qubrada"
 	},
 	{
 		img: "assets/wb4.jpg",
-		description: "Ipoema"
+		description: "componentes"
 	},
 	{
 		img: "assets/batery.jpg",
-		description: "Ouro Preto"
+		description: "baterias"
 	}
 ]
 
