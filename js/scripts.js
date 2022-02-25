@@ -1,35 +1,35 @@
 const _gallery = [
 	{
-		img: "assets/front.jpg",
-		description: "frontal"
+		img: "assets/img1.jpg",
+		description: "Troca de Frontal"
 	},
 	{
-		img: "assets/previus.jpg",
-		description: "antes do concerto"
+		img: "assets/img2.jpg",
+		description: "Recuperação de Componentes"
 	},
 	{
-		img: "assets/next.jpg",
-		description: "depois do concerto"
+		img: "assets/img3.jpg",
+		description: "Reparos Smartphone"
 	},
 	{
-		img: "assets/wb1.jpg",
-		description: "troca fios"
+		img: "assets/img4.jpg",
+		description: "Acessórios de estilização"
 	},
 	{
-		img: "assets/wb2.jpg",
-		description: "conectores"
+		img: "assets/img5.jpg",
+		description: "Variados Modelos"
 	},
 	{
-		img: "assets/wb3.jpg",
-		description: "tela qubrada"
+		img: "assets/img6.jpg",
+		description: "Acessórios de Conexão"
 	},
 	{
-		img: "assets/wb4.jpg",
-		description: "componentes"
+		img: "assets/img7.jpg",
+		description: "Serviços Android"
 	},
 	{
-		img: "assets/batery.jpg",
-		description: "baterias"
+		img: "assets/img8.png",
+		description: "Conta Google"
 	}
 ]
 

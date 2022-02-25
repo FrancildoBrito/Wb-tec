@@ -464,6 +464,7 @@ cursor: pointer;
 overflow: hidden;
 }
 
+
 .galeria-item__thumb{
 	transition: var(--transition);
 }
